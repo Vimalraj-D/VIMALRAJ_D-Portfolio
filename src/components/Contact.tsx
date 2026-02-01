@@ -24,8 +24,9 @@ export const Contact = () => {
         alert("Message sent successfully 🚀")
         formRef.current.reset()
       })
-      .catch(() => {
-        alert("Failed to send message ❌")
+      .catch((error) => {
+        console.error("EmailJS error:", error);
+        alert("Failed to send message ❌\n" + error?.text || error);
       })
   }
   return (
