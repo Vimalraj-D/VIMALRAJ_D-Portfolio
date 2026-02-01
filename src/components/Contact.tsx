@@ -13,12 +13,22 @@ export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      console.error("EmailJS configuration missing:", { serviceId, templateId, publicKey });
+      alert("Mail service is not configured. Please contact the site owner.");
+      return;
+    }
+
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        serviceId,
+        templateId,
         formRef.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        publicKey
       )
       .then(() => {
         alert("Message sent successfully 🚀")
@@ -26,7 +36,7 @@ export const Contact = () => {
       })
       .catch((error) => {
         console.error("EmailJS error:", error);
-        alert("Failed to send message ❌\n" + error?.text || error);
+        alert("Failed to send message ❌\n" + (error?.text || error?.message || error));
       })
   }
   return (

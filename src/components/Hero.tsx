@@ -105,7 +105,7 @@ export const Hero = () => {
             <div className="relative">
               <div className="w-72 h-72 md:w-96 md:h-96 bg-muted border-2 border-primary overflow-hidden">
                 <img 
-                  src="public//mine.jpg"
+                  src="/mine.jpg"
                   alt="Vimalraj D"
                   className="w-full h-full object-cover"
                 />
