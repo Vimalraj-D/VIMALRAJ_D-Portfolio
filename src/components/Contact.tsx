@@ -15,10 +15,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_i1edc0e",
-        "template_fk8djia",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formRef.current,
-        "sMIDUfJYW9jmIlrJD"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
         alert("Message sent successfully 🚀")
