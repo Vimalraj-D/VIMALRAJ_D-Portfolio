@@ -18,7 +18,7 @@ interface AIChatbotProps {
 
 export const AIChatbot = ({ isOpen, onClose }: AIChatbotProps) => {
   const [messages, setMessages] = useState<Message[]>([
-    { role: "assistant", content: "Hey there! 👋 The AI chatbot is disabled on the public site for security reasons. Please contact me directly for more info!" }
+    { role: "assistant", content: "Hey there! 👋 I'm Vimalraj's AI assistant. Feel free to ask me anything about his skills, projects, or experience. What's your name?" }
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -32,12 +32,45 @@ export const AIChatbot = ({ isOpen, onClose }: AIChatbotProps) => {
     scrollToBottom();
   }, [messages]);
 
-  // Chatbot is disabled for public deployment
-  const sendMessage = () => {
-    setMessages([
-      { role: "assistant", content: "Hey there! 👋 The AI chatbot is disabled on the public site for security reasons. Please contact me directly for more info!" }
-    ]);
+  const sendMessage = async () => {
+    if (!input.trim() || isLoading) return;
+
+    const userMessage: Message = { role: "user", content: input };
+    const newMessages = [...messages, userMessage];
+    setMessages(newMessages);
     setInput("");
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          messages: newMessages.map(m => ({ role: m.role, content: m.content }))
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error("Chat API error:", errorData);
+        throw new Error("Failed to get response");
+      }
+
+      const data = await response.json();
+      const assistantMessage = data.message || "Sorry, I couldn't process that. Please try again.";
+
+      setMessages(prev => [...prev, { role: "assistant", content: assistantMessage }]);
+    } catch (error) {
+      console.error("Chat error:", error);
+      setMessages(prev => [...prev, {
+        role: "assistant",
+        content: "Oops! Something went wrong. Please try again."
+      }]);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
@@ -126,13 +159,15 @@ export const AIChatbot = ({ isOpen, onClose }: AIChatbotProps) => {
             <Input
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Chatbot disabled for public demo"
+              onKeyPress={handleKeyPress}
+              placeholder="Ask me anything..."
               className="bg-background/50 border-white/10 text-foreground placeholder:text-muted-foreground rounded-xl focus:border-purple-500"
-              disabled
+              disabled={isLoading}
             />
             <Button 
+              onClick={sendMessage}
               className="bg-gradient-to-r from-white-500 to-cyan-400 text-white hover:opacity-90 rounded-xl"
-              disabled
+              disabled={!input.trim() || isLoading}
             >
               <Send className="w-4 h-4" />
             </Button>
