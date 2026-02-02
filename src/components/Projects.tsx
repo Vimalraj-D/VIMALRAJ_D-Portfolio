@@ -28,7 +28,7 @@ const projects = [
     ],
     tech: ["Python", "Computer Vision", "Machine Learning"],
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&h=400&fit=crop",
-    demoVideo:"public//projects//Screen Recording 2025-02-28 205224.mp4",
+    demoVideo:"/projects/Screen Recording 2025-02-28 205224.mp4",
     github: "https://github.com/Vimalraj-D/FOODIE_AI",
     live: "public//projects//Screen Recording 2025-02-28 205224.mp4",
   },
