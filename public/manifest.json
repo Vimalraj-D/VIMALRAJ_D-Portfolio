@@ -1,0 +1,13 @@
+{
+  "name": "Portfolio - Vimalraj",
+  "short_name": "Vimalraj",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone",
+  "start_url": "/"
+}
