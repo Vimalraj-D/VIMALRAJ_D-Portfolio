@@ -31,7 +31,7 @@ export const InspirationModal = ({ isOpen, onClose }: InspirationModalProps) => 
         {/* Header */}
         <div className="relative h-48 overflow-hidden -mt-12">
           <img 
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Elon_Musk_-_54820081119_%28cropped%29.jpg/250px-Elon_Musk_-_54820081119_%28cropped%29.jpg"
+            src="https://cdn-s3.autocarindia.com/legacy/cdni/ExtraImages/20230901023724_tesla_model_3_facelift_2023_03.png?w=728&q=75"
             alt="Elon Musk"
             className="w-full h-full object-cover"
           />
