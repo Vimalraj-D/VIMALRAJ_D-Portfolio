@@ -61,7 +61,7 @@ const projects = [
   demoVideo: "#",
   github: "#",
   live: "#",
-}
+},
  {
   title: "Smart Traffic Management System",
   period: "Feb 2025 – Apr 2025",
