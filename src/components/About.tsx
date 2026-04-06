@@ -42,7 +42,7 @@ export const About = () => {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <img 
-                        src="https://images.unsplash.com/photo-1611200945005-403b70229452?w=60&h=60&fit=crop&crop=face"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Elon_Musk_-_54820081119_%28cropped%29.jpg/250px-Elon_Musk_-_54820081119_%28cropped%29.jpg"
                         alt="Elon Musk"
                         className="w-12 h-12 object-cover rounded-lg ring-2 ring-primary/30"
                       />
