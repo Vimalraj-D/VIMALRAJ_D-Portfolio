@@ -46,6 +46,22 @@ const projects = [
     github: "https://github.com/Vimalraj-D/Book-Recommendation",
     live: "https://huggingface.co/spaces/Vimalraj-D/BookSage_AI",
   },
+  {
+  title: "Intelligent Cloth Segregation System",
+  period: "Jan 2026 – Mar 2026",
+  description: "AI-Based Fabric Material Identification Using Multispectral Analysis",
+  details: [
+    "Developed an intelligent fabric classification system using the AS7265x multispectral sensor to capture spectral signatures of different cloth materials.",
+    "Built a labeled dataset by collecting multiple spectral readings from various fabric samples such as cotton, polyester, and blended materials.",
+    "Applied machine learning algorithms to analyze spectral patterns and accurately classify fabric types based on their reflectance characteristics.",
+    "Designed a data processing pipeline for sensor calibration, feature extraction, and model training to improve classification accuracy."
+  ],
+  tech: ["Python", "Machine Learning", "AS7265x Multispectral Sensor", "NumPy", "Scikit-learn"],
+  image: "https://www.borngood.in/cdn/shop/articles/image-_5_e277ef8a-b391-4bfb-b64c-5db2cb6080c4.png?v=1623345561",
+  demoVideo: "#",
+  github: "#",
+  live: "#",
+}
 ];
 
 export const Projects = () => {
