@@ -48,7 +48,7 @@ const projects = [
   },
   {
   title: "Intelligent Cloth Segregation System",
-  period: "Jan 2026 – Mar 2026",
+  period: "Aug 2025 – Nov 2025",
   description: "AI-Based Fabric Material Identification Using Multispectral Analysis",
   details: [
     "Developed an intelligent fabric classification system using the AS7265x multispectral sensor to capture spectral signatures of different cloth materials.",
@@ -62,6 +62,23 @@ const projects = [
   github: "#",
   live: "#",
 }
+ {
+  title: "Smart Traffic Management System",
+  period: "Feb 2025 – Apr 2025",
+  description: "AI-Based Adaptive Traffic Signal Control with Emergency Vehicle Priority",
+  details: [
+    "Developed an intelligent traffic management system that monitors vehicle density at multi-lane intersections using cameras installed for each lane.",
+    "Implemented a computer vision model to detect and count vehicles waiting in every lane in real time.",
+    "Designed an adaptive traffic signal algorithm where each lane receives one turn per cycle, but signal duration dynamically adjusts based on vehicle count.",
+    "Integrated emergency vehicle detection (ambulance and fire truck) using object detection models to automatically override the signal and provide immediate priority.",
+    "Built a traffic optimization logic that reduces congestion by prioritizing lanes with higher vehicle density while maintaining fair rotation among all lanes."
+  ],
+  tech: ["Python", "OpenCV", "YOLO", "Computer Vision", "Edge Computing"],
+  image: "https://media.licdn.com/dms/image/v2/D5612AQHCOI2qZAPQGw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1699968551173?e=2147483647&v=beta&t=SuD4YTgWeyHRoQQAPVcLXiiV2nvlxH78FSWitWWV6oc",
+  demoVideo: "#",
+  github: "#",
+  live: "#",
+} 
 ];
 
 export const Projects = () => {
