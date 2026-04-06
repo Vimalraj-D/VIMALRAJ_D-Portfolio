@@ -78,7 +78,25 @@ const projects = [
   demoVideo: "#",
   github: "#",
   live: "#",
-} 
+},
+{
+  title: "Telemedical AI Kiosk Booth",
+  period: "Feb 2026 – Apr 2026",
+  description: "AI-Powered Autonomous Medical Diagnostic Kiosk for Remote Healthcare Access",
+  details: [
+    "Developed a smart telemedicine kiosk designed to provide autonomous health diagnostics in remote or underserved areas.",
+    "Integrated AI-enabled medical sensors to measure vital parameters such as blood pressure, oxygen saturation (SpO2), ECG, and other basic health indicators.",
+    "Built an AI diagnostic assistant that analyzes collected health data and generates an understandable medical report for the user.",
+    "Implemented an AI chatbot interface that explains the diagnosis in simple language and provides health guidance.",
+    "Designed an emergency alert system that automatically notifies nearby hospitals within a defined radius when critical conditions are detected.",
+    "Added an optional real-time online doctor consultation feature allowing users to connect with medical professionals for further advice."
+  ],
+  tech: ["Python", "AI/ML", "IoT Sensors", "Computer Vision", "Telemedicine APIs"],
+  image: "https://clinicsoncloud.com/wp-content/uploads/2024/07/gallery-1-clinics-on-cloude.jpg",
+  demoVideo: "#",
+  github: "#",
+  live: "#",
+}
 ];
 
 export const Projects = () => {
