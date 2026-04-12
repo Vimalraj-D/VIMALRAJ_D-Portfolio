@@ -44,7 +44,7 @@ export const Experience = () => {
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground bg-gradient-to-r from-muted/50 to-muted/30 px-4 py-2.5 rounded-lg border border-border/50 backdrop-blur-sm self-start">
                   <Calendar className="w-4 h-4 text-primary" />
-                  <span className="font-medium">Present</span>
+                  <span className="font-medium">Apr 2026 - Present</span>
                 </div>
               </div>
 
@@ -53,9 +53,9 @@ export const Experience = () => {
                 <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-4 rounded-lg border border-primary/20 hover:border-primary/40 transition-all group/card">
                   <div className="flex items-center gap-2 mb-2">
                     <Code2 className="w-5 h-5 text-primary" />
-                    <h5 className="font-semibold text-foreground">React · Athena</h5>
+                    <h5 className="font-semibold text-foreground">React</h5>
                   </div>
-                  <p className="text-sm text-muted-foreground">Building the Athena conversational insight platform frontend</p>
+                  <p className="text-sm text-muted-foreground">Building the conversational insight platform frontend</p>
                 </div>
                 <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-4 rounded-lg border border-primary/20 hover:border-primary/40 transition-all group/card">
                   <div className="flex items-center gap-2 mb-2">
