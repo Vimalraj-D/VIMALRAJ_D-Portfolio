@@ -33,7 +33,7 @@ export const Experience = () => {
                         Support Product Engineer Intern
                       </h3>
                       <div className="flex items-center gap-2 text-primary mt-1">
-                        <span className="font-semibold text-lg">Conversigh AI</span>
+                        <span className="font-semibold text-lg">Conversight AI</span>
                       </div>
                       <div className="flex items-center gap-1.5 text-muted-foreground text-sm mt-1">
                         <MapPin className="w-3.5 h-3.5" />
