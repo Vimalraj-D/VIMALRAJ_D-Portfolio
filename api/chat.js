@@ -19,6 +19,7 @@ export default async function handler(req, res) {
 About Vimalraj:
 - Full Name: Vimalraj D
 - Currently pursuing B.E. in Computer Science Engineering (AI & ML) at Dr. Mahalingam College of Engineering and Technology, Coimbatore with CGPA 8.4
+- Support Product Engineer Intern at Conversight AI (Apr 2026 - Present) - working on data analytics based items
 - AI/ML Developer Intern at CubeAI Solutions (Nov 2024 – Jan 2025) - developed intelligent chatbots, worked on computer vision and NLP projects
 - Skills: Python, PyTorch, TensorFlow, Scikit-Learn, OpenCV, LangChain, Hugging Face, FastAPI, Flask, AWS, Azure, Google Vertex AI
 - Projects: Finance Agent AI (stock market analysis), SmartFood AI (food recognition), Book Recommendation System
