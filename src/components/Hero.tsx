@@ -63,8 +63,8 @@ export const Hero = () => {
                 className="border-border text-foreground hover:bg-muted px-8 py-6 text-base font-medium"
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/certificates/VIMALRAJ_D-AI&ML-Resume.pdf';
-                  link.download = 'VIMALRAJ_AIML-Resume.pdf';
+                  link.href = '/certificates/VIMALRAJ-D-Resume-.pdf';
+                  link.download = 'VIMALRAJ-D-Resume-.pdf';
                   document.body.appendChild(link);
                   link.click();
                   document.body.removeChild(link);
