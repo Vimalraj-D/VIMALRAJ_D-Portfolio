@@ -48,6 +48,13 @@ const runningSkills = [
 
 const certifications = [
   {
+      title: "Flipkart GRiD 8.0 – National Semi-Finalist",
+      issuer: "Flipkart",
+      description: "Recognized as a National Semi-Finalist in Flipkart GRiD 8.0, a national-level engineering and technology competition organized by Flipkart.",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flipkart_logo.svg",
+      image: "/certificates/Vimalraj D_page-0001.jpg",
+  },
+  {
     title: "Building RAG Apps Using MongoDB",
     issuer: "MongoDB",
     description: "Learn to build RAG applications using MongoDB with vector search and LLM integration.",
