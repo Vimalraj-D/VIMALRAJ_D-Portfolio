@@ -51,7 +51,7 @@ const certifications = [
       title: "Flipkart GRiD 8.0 – National Semi-Finalist",
       issuer: "Flipkart",
       description: "Recognized as a National Semi-Finalist in Flipkart GRiD 8.0, a national-level engineering and technology competition organized by Flipkart.",
-      logo: "https://play-lh.googleusercontent.com/mlWjVjxflQoYJHBBgDQ08FqT8i3KnDG__2RH8P-GWOKlEPAIo8TllTZo3HDQ3J5zlO6oAhc1FAv0Bf2on0wL8w=s256-rw",
+      logo: "https://mycareernet.co/events/wp-content/uploads/2026/06/Flipkart-Grid-Social-Banner.jpg",
       image: "/certificates/Vimalraj D_page-0001.jpg",
   },
   {
@@ -72,7 +72,7 @@ const certifications = [
     title: "Computer Vision Certification",
     issuer: "Kaggle",
     description: "In-depth training on image processing, object detection, and convolutional neural networks.",
-    logo:"https://media.licdn.com/dms/image/sync/v2/D5627AQErGOkuSz9XaQ/articleshare-shrink_800/B56ZYGS1HYGsAI-/0/1743862322115?e=2147483647&v=beta&t=M-wN8Rk6EAHiLcu7ZR37zqPrKqPOzrrh3fjirwcgmkM",
+    logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKKVRVcKzHy4eQ4dvnsl_Nw3htBAvb6PU3wt1U8qW3IQ&s=10",
     image: "/certificates/VIMALRAJ D - Computer Vision.png",
   },
   {
