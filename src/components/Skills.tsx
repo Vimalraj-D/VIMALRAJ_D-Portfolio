@@ -51,7 +51,7 @@ const certifications = [
       title: "Flipkart GRiD 8.0 – National Semi-Finalist",
       issuer: "Flipkart",
       description: "Recognized as a National Semi-Finalist in Flipkart GRiD 8.0, a national-level engineering and technology competition organized by Flipkart.",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flipkart_logo.svg",
+      logo: "https://play-lh.googleusercontent.com/mlWjVjxflQoYJHBBgDQ08FqT8i3KnDG__2RH8P-GWOKlEPAIo8TllTZo3HDQ3J5zlO6oAhc1FAv0Bf2on0wL8w=s256-rw",
       image: "/certificates/Vimalraj D_page-0001.jpg",
   },
   {
